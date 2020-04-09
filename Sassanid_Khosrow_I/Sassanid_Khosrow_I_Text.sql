@@ -9,3 +9,9 @@ WHERE Tag = 'LOC_TRAIT_LEADER_SUK_ARCHWAY_OF_CTESIPHON_DESCRIPTION' AND Language
 
 UPDATE LocalizedText SET Text = "Hail, Khosrow I, the Immortal Soul, King of Kings! Your fearlessness, ambition and learning are renowned throughout the world. Build your empire into a beacon of civilization by creating lush gardens, constructing great wonders, and attracting the world's most brilliant minds. Do this, and all the world will stand in awe at the glory of Eranshahr."
 WHERE Tag = 'LOC_LOADING_INFO_LEADER_SUK_KHOSROW_I' AND Language = 'en_US';
+
+INSERT OR REPLACE INTO LocalizedText (Tag, Language, Text)
+VALUES ('LOC_DISTRICT_CVS_HUNTINGPARK_WONDER_GOLD', 'en_US', "+{1_num} [ICON_Gold] Gold from the adjacent {1_Num : plural 1?wonder; other?wonders;}.");
+
+INSERT OR REPLACE INTO LocalizedText (Tag, Language, Text)
+VALUES ('LOC_DISTRICT_CVS_HUNTINGPARK_WONDER_PRODUCTION', 'en_US', "+{1_num} [ICON_Production] Production from the adjacent {1_Num : plural 1?wonder; other?wonders;}.");
